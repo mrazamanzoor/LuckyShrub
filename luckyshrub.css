@@ -1,0 +1,243 @@
+:root{
+    --Primary-color: #2c552c;
+    --Secondary-color:hsl(28, 61%, 63%);
+    --Highlight-pop:#d4d084;
+
+}
+body{
+    background-color:  var(--Primary-color);
+    margin:3rem 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    color: var(--Highlight-pop);
+    font-size: 2rem;
+}
+img{
+     border-radius: 1rem;
+}
+nav{
+    background-color: var(--Highlight-pop);
+    border-radius: 1rem;
+}
+header img{
+    display: block;
+    margin: 0px auto;
+}
+
+nav>ul{
+    list-style-type: none;
+     text-align: center;
+     margin: 1rem 0;
+
+}
+
+nav li{
+    display: inline-block;
+   
+
+}
+nav a{
+    text-decoration: none;
+    color: var(--Secondary-color);
+    font-size: 1.5rem;
+    margin-inline: 1.5rem;
+    
+}
+a:hover{
+    color:var(--Primary-color)
+}
+
+section{
+    display: flex;
+    border-radius: 1rem;
+}
+article{
+    border-radius: 1rem;
+    
+}
+.section1{
+    background-image: url(lucky-shrub-promotion.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.section1 article{
+    margin-left: 1rem;
+    margin-right: 10rem;
+}
+.section1 h1{
+    color: var(--Primary-color);
+}
+.section1 p{
+    color: var(--Secondary-color);
+    text-indent: 5rem;
+}
+
+.section2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    gap: 2rem 1rem;
+    white-space: wrap;
+    overflow: hidden;
+    
+}
+.section2 article{
+    border: 1px solid var(--Highlight-pop);
+    background-color: var(--Secondary-color);
+    padding-left: 2rem;
+   
+}
+
+.section2 article:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0.5rem 0.5rem 1rem var(--Secondary-color);
+}
+.section2 img{
+    width: 90%;
+    height: 15rem;
+   
+}
+.section2 button{
+    display: block;
+    margin: 1rem 5rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: var(--Primary-color);
+    color: var(--Secondary-color);
+    transition:  background-color 2s ease, color 2s ease;
+
+
+}
+
+button:hover{
+    background-color:var(--Highlight-pop);
+    color:var(--Primary-color);
+    
+}
+.section3{
+    background-color: var(--Secondary-color);
+    margin-bottom:2rem;
+     overflow: hidden;
+
+}
+.section3 article{
+    margin-right:2rem;
+    margin-left: 2rem;
+     white-space: wrap;
+}
+
+.section3 img{
+    width: auto;
+    height: 15rem;
+}
+
+.section4{
+    background-color: var(--Secondary-color);
+    margin-bottom:2rem;
+}
+
+.section4 img{
+     width: auto;
+    height: 15rem;
+
+}
+.section4 article{
+    margin-left: 2.5rem;
+}
+
+footer{
+    display: flex;
+    background-color: var(--Highlight-pop);
+}
+footer div{
+    flex: 1;
+}
+footer img{
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.copyright{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-top: 2px solid var(--Secondary-color);
+    text-align: right;
+
+}
+/* .article1{
+    /* animation: articleleft 5s infinite ease-in-out;
+} */
+
+@keyframes articleleft {
+    from{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0rem);
+    }
+    
+}
+
+/* .article3{
+    /* animation: articleright 5s infinite ease-in-out;
+} */
+
+@keyframes articleright {
+    from{
+        transform: translateX(5rem);
+        opacity: 0;
+        
+    }
+    to{
+        transform: translateX(0rem);
+    }
+    
+}
+
+/* .article2{
+      animation: articlemid 5s infinite ease-in-out; 
+} */
+
+@keyframes articlemid {
+    from{
+        transform: translatey(5rem);
+         opacity: 0;
+        z-index: -1;
+    }
+    to{
+        transform: translatey(0rem);
+    }
+    
+}
+.team1{
+    animation: teamleft 5s infinite ease;
+}
+
+@keyframes teamleft {
+    from{
+        transform: rotatez(0);
+    }
+    to{
+        transform: rotatez(360deg);
+    }
+}
+
+.team2{
+    animation: teamright 5s infinite ease-in-out;
+}
+@keyframes teamright {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+         transform: rotateY(360deg);
+    }
+    }
